@@ -1,10 +1,10 @@
 [gd_scene load_steps=18 format=4 uid="uid://dqnswprqjctts"]
 
-[ext_resource type="Texture2D" uid="uid://d0ieet0oivpbd" path="res://Assets/1 - Foreground_scenery.png" id="1_fxxhp"]
-[ext_resource type="Texture2D" uid="uid://dia7csg6t0fo" path="res://Assets/2 - Hills.png" id="2_ue4aw"]
-[ext_resource type="Texture2D" uid="uid://c04tctrgku528" path="res://Assets/3 - Cloud_cover_1.png" id="3_cjmjj"]
-[ext_resource type="Texture2D" uid="uid://dyu0ipsi7nklw" path="res://Assets/4 - Cloud_cover_2.png" id="4_62ypo"]
-[ext_resource type="Texture2D" uid="uid://thci0f5cocfk" path="res://Assets/Terrain (16x16).png" id="5_o8n73"]
+[ext_resource type="Texture2D" uid="uid://bxxnib416cgqa" path="res://Assets/1 - Foreground_scenery.png" id="1_fxxhp"]
+[ext_resource type="Texture2D" uid="uid://c6pvs0mbq04at" path="res://Assets/2 - Hills.png" id="2_ue4aw"]
+[ext_resource type="Texture2D" uid="uid://1ujmuxmw5rog" path="res://Assets/3 - Cloud_cover_1.png" id="3_cjmjj"]
+[ext_resource type="Texture2D" uid="uid://db6d883e5ctn1" path="res://Assets/4 - Cloud_cover_2.png" id="4_62ypo"]
+[ext_resource type="Texture2D" uid="uid://c3ma5jrb8xgy4" path="res://Assets/Terrain (16x16).png" id="5_o8n73"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pvofi"]
 texture = ExtResource("1_fxxhp")
