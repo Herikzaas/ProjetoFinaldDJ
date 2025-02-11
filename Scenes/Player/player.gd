@@ -2,12 +2,14 @@ extends CharacterBody2D
 
 @onready var anim = $animation as AnimatedSprite2D
 
-var lifes = $"/root/Global".lifes
 var speed = 150.0
 const JUMP_VELOCITY = -300.0
 const dash_speed = 900.0
 
+#@onready var lifes = $"/root/global".lifes as int
+
 @export var phase : PackedScene 
+var phase_string = str(phase)
 
 
 var hsm: LimboHSM
@@ -98,9 +100,14 @@ func _dash_physics_process(delta: float):
 		hsm.dispatch(&"fall_started")
 
 func _death_physics_process(delta: float):
-	pass
+	print(hsm.get_active_state())
+	if anim.frame >= 8 :
+		get_tree().change_scene_to_packed(phase)
 #func process
 func _physics_process(delta: float) -> void:
+	
+	var lifes = $"/root/global".lifes
+	
 	if not is_on_floor():
 		velocity += get_gravity() * delta
 
