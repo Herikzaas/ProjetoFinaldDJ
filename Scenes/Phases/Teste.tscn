@@ -12,7 +12,6 @@ radius = 62.9682
 [node name="Teste" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("1_af1sa")]
-phase = null
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 

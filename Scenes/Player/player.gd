@@ -3,7 +3,7 @@ extends CharacterBody2D
 @onready var anim = $animation as AnimatedSprite2D
 
 var speed = 150.0
-const JUMP_VELOCITY = -300.0
+const JUMP_VELOCITY = -500.0
 const dash_speed = 900.0
 
 #@onready var lifes = $"/root/global".lifes as int
@@ -20,6 +20,7 @@ var is_attacking = false
 var attack_possible = true
 var dash_possible = true
 var facing_right = true
+var death = false
 #func ready
 #-----------------------------------
 func _ready() -> void:
@@ -101,12 +102,17 @@ func _dash_physics_process(delta: float):
 
 func _death_physics_process(delta: float):
 	print(hsm.get_active_state())
-	if anim.frame >= 8 :
+	if anim.frame >= 7 :
+		queue_free()
 		get_tree().change_scene_to_packed(phase)
 #func process
 func _physics_process(delta: float) -> void:
 	
 	var lifes = $"/root/global".lifes
+	
+	if death :
+		print("death")
+		hsm.dispatch(&"death_started")
 	
 	if not is_on_floor():
 		velocity += get_gravity() * delta
@@ -165,6 +171,7 @@ func _init_state_machine():
 	var fall_state = LimboState.new().named("fall").call_on_enter(_fall_ready).call_on_update(_fall_physics_process)
 	var dash_state = LimboState.new().named("dash").call_on_enter(_dash_ready).call_on_update(_dash_physics_process)
 	var death_state = LimboState.new().named("death").call_on_enter(_death_ready).call_on_update(_death_physics_process)
+	
 	
 	hsm.add_child(idle_state)
 	hsm.add_child(move_state)
