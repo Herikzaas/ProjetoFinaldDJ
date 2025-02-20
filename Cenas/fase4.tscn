@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=4 uid="uid://dtl55jdsfrto0"]
+[gd_scene load_steps=23 format=4 uid="uid://dtl55jdsfrto0"]
 
 [ext_resource type="Texture2D" uid="uid://bxxnib416cgqa" path="res://Assets/1 - Foreground_scenery.png" id="1_xm2vb"]
 [ext_resource type="Texture2D" uid="uid://c6pvs0mbq04at" path="res://Assets/2 - Hills.png" id="2_p5dky"]
@@ -8,6 +8,8 @@
 [ext_resource type="PackedScene" uid="uid://dar8h4rmwlltd" path="res://Scenes/Player/player.tscn" id="6_6pofc"]
 [ext_resource type="PackedScene" uid="uid://dh4xbaarxgwun" path="res://Scenes/FallZone/fall_zone.tscn" id="7_qxhk7"]
 [ext_resource type="PackedScene" uid="uid://bxis6id1hxm4p" path="res://Scenes/Boss/Ice_Boss.tscn" id="8_ed3k0"]
+[ext_resource type="AudioStream" uid="uid://hnibotosp3hm" path="res://Audios/trilha sonora/[FASE] The Whole Other - 8-Bit Dreamscape  NO COPYRIGHT 8-bit Music.mp3" id="9_foppx"]
+[ext_resource type="PackedScene" uid="uid://c2sstxewjfhte" path="res://Scenes/heart_regen.tscn" id="10_13xyy"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pvofi"]
 texture = ExtResource("1_xm2vb")
@@ -1142,3 +1144,13 @@ scale = Vector2(3.5, 1)
 [node name="CharacterBody2D" parent="." node_paths=PackedStringArray("player") instance=ExtResource("8_ed3k0")]
 position = Vector2(3283, 450)
 player = NodePath("../Player")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("9_foppx")
+autoplay = true
+
+[node name="Area2D" parent="." instance=ExtResource("10_13xyy")]
+position = Vector2(66, 65)
+
+[node name="Area2D2" parent="." instance=ExtResource("10_13xyy")]
+position = Vector2(1048, 86)

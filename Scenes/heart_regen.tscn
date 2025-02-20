@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://c2sstxewjfhte"]
+
+[ext_resource type="Texture2D" uid="uid://bdarikvwpdw4w" path="res://Assets/heart-sprite-full-health/heart-sprite-full-health.png" id="1_cersp"]
+[ext_resource type="Script" path="res://Scenes/heart_regen.gd" id="1_ncsck"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_eyv82"]
+
+[node name="Area2D" type="Area2D"]
+collision_mask = 4
+script = ExtResource("1_ncsck")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_cersp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_eyv82")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

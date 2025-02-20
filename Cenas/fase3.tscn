@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=4 uid="uid://cq21cxq27igdw"]
+[gd_scene load_steps=29 format=4 uid="uid://cq21cxq27igdw"]
 
 [ext_resource type="Script" path="res://Cenas/fase_3.gd" id="1_7i1fd"]
 [ext_resource type="Texture2D" uid="uid://bxxnib416cgqa" path="res://Assets/1 - Foreground_scenery.png" id="1_xm2vb"]
@@ -11,6 +11,8 @@
 [ext_resource type="PackedScene" uid="uid://cjjnw4cc4mjjy" path="res://Scenes/PortalBack/portal.tscn" id="8_feb80"]
 [ext_resource type="PackedScene" uid="uid://dtl55jdsfrto0" path="res://Cenas/fase4.tscn" id="10_spme2"]
 [ext_resource type="PackedScene" uid="uid://wtvwbgqxwn0k" path="res://Scenes/Enemys/mushroom.tscn" id="11_3ukh2"]
+[ext_resource type="AudioStream" uid="uid://o3hhef2837mp" path="res://Audios/trilha sonora/[FASE] Quincas Moreira - Robot City  NO COPYRIGHT 8-bit Music.mp3" id="12_5xxm5"]
+[ext_resource type="PackedScene" uid="uid://c2sstxewjfhte" path="res://Scenes/heart_regen.tscn" id="13_1iebl"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_n57r7"]
 texture = ExtResource("1_xm2vb")
@@ -1258,3 +1260,16 @@ shape = SubResource("RectangleShape2D_nk4j1")
 
 [node name="Mushroom" parent="." instance=ExtResource("11_3ukh2")]
 position = Vector2(974, 42)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("12_5xxm5")
+autoplay = true
+
+[node name="Area2D" parent="." instance=ExtResource("13_1iebl")]
+position = Vector2(29, 53)
+
+[node name="Area2D2" parent="." instance=ExtResource("13_1iebl")]
+position = Vector2(1543, 339)
+
+[node name="Area2D3" parent="." instance=ExtResource("13_1iebl")]
+position = Vector2(1543, 339)

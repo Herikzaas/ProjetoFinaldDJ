@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=4 uid="uid://63wrsqththr4"]
+[gd_scene load_steps=17 format=4 uid="uid://63wrsqththr4"]
 
 [ext_resource type="Texture2D" uid="uid://1ujmuxmw5rog" path="res://Assets/3 - Cloud_cover_1.png" id="1_62oly"]
 [ext_resource type="Script" path="res://Cenas/fase_2.gd" id="1_p1xf6"]
@@ -9,6 +9,8 @@
 [ext_resource type="PackedScene" uid="uid://cjjnw4cc4mjjy" path="res://Scenes/PortalBack/portal.tscn" id="6_3i1kk"]
 [ext_resource type="PackedScene" uid="uid://cq21cxq27igdw" path="res://Cenas/fase3.tscn" id="8_uaqlm"]
 [ext_resource type="PackedScene" uid="uid://be8e7qy6ggj8j" path="res://Scenes/Enemys/bicho1.tscn" id="9_p7xw6"]
+[ext_resource type="AudioStream" uid="uid://cmbjait787jy5" path="res://Audios/trilha sonora/[FASE] Kevin MacLeod - Pixelland  NO COPYRIGHT 8-bit Music.mp3" id="10_cp6hp"]
+[ext_resource type="PackedScene" uid="uid://c2sstxewjfhte" path="res://Scenes/heart_regen.tscn" id="11_gccuy"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vnlrb"]
 texture = ExtResource("1_62oly")
@@ -498,3 +500,13 @@ position = Vector2(533, 195)
 
 [node name="CharacterBody2D2" parent="." instance=ExtResource("9_p7xw6")]
 position = Vector2(2190, 287)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("10_cp6hp")
+autoplay = true
+
+[node name="Area2D" parent="." instance=ExtResource("11_gccuy")]
+position = Vector2(372, 226)
+
+[node name="Area2D2" parent="." instance=ExtResource("11_gccuy")]
+position = Vector2(1753, 225)

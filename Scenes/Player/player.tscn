@@ -1,4 +1,4 @@
-[gd_scene load_steps=53 format=3 uid="uid://dar8h4rmwlltd"]
+[gd_scene load_steps=54 format=3 uid="uid://dar8h4rmwlltd"]
 
 [ext_resource type="Texture2D" uid="uid://dgacj0uqee6ks" path="res://Scenes/Player/Player/Knight/_Attack.png" id="1_nejds"]
 [ext_resource type="Script" path="res://Scenes/Player/player.gd" id="1_vokex"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://dxygekxkpodh7" path="res://Scenes/Player/Player/Knight/_Run.png" id="3_vblo6"]
 [ext_resource type="Texture2D" uid="uid://c8obke2sewmoj" path="res://Scenes/Player/Player/Knight/_Death.png" id="4_aqwba"]
 [ext_resource type="Texture2D" uid="uid://d0be3sn8qtw0v" path="res://Scenes/Player/Player/Knight/_Jump.png" id="5_8l5wq"]
+[ext_resource type="PackedScene" uid="uid://bo2nyx6gk0s62" path="res://Scenes/lifes.tscn" id="9_4jtti"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vxp7f"]
 atlas = ExtResource("1_nejds")
@@ -368,6 +369,10 @@ one_shot = true
 [node name="attack_cooldown" type="Timer" parent="."]
 wait_time = 0.5
 one_shot = true
+
+[node name="AnimatedSprite2D" parent="." instance=ExtResource("9_4jtti")]
+position = Vector2(-4, -6)
+scale = Vector2(0.5, 0.5)
 
 [connection signal="animation_finished" from="animation" to="." method="_on_animation_animation_finished"]
 [connection signal="body_entered" from="sword_area" to="." method="_on_sword_area_body_entered"]

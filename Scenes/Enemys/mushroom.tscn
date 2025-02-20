@@ -262,3 +262,4 @@ position = Vector2(-20, 8)
 scale = Vector2(0.6, 0.5)
 
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
+[connection signal="body_entered" from="CollidePlayer" to="." method="_on_collide_player_body_entered"]

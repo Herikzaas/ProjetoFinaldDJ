@@ -1,0 +1,34 @@
+[gd_scene load_steps=7 format=3 uid="uid://bo2nyx6gk0s62"]
+
+[ext_resource type="Texture2D" uid="uid://bdarikvwpdw4w" path="res://Assets/heart-sprite-full-health/heart-sprite-full-health.png" id="1_lg1nd"]
+[ext_resource type="Texture2D" uid="uid://3l6b2f7yquhg" path="res://Assets/heart-sprite-full-health/heart-sprite-health-2.png" id="2_crcva"]
+[ext_resource type="Texture2D" uid="uid://cgh1n4hymkkbk" path="res://Assets/heart-sprite-full-health/heart-health-sprite-3.png" id="3_qy5ra"]
+[ext_resource type="Texture2D" uid="uid://c0vgdujmoyxr6" path="res://Assets/heart-sprite-full-health/heart-health-sprite-4.png" id="4_0tmoq"]
+[ext_resource type="Script" path="res://animated_sprite_2d.gd" id="5_2jne6"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gv05x"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_lg1nd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_crcva")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_qy5ra")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_0tmoq")
+}],
+"loop": false,
+"name": &"heart",
+"speed": 5.0
+}]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_gv05x")
+animation = &"heart"
+frame = 1
+frame_progress = 0.281885
+script = ExtResource("5_2jne6")
