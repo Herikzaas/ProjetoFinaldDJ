@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bt1hw4ganlqxu"
+path="res://.godot/imported/[FASE] Joshua McLean - Mountain Trials  NO COPYRIGHT 8-bit Music.mp3-87125d0288c274958a48130fab6c1a31.mp3str"
+
+[deps]
+
+source_file="res://Audios/trilha sonora/[FASE] Joshua McLean - Mountain Trials  NO COPYRIGHT 8-bit Music.mp3"
+dest_files=["res://.godot/imported/[FASE] Joshua McLean - Mountain Trials  NO COPYRIGHT 8-bit Music.mp3-87125d0288c274958a48130fab6c1a31.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

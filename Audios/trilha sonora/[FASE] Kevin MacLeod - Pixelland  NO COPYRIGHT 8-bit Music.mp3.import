@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cmbjait787jy5"
+path="res://.godot/imported/[FASE] Kevin MacLeod - Pixelland  NO COPYRIGHT 8-bit Music.mp3-c9932b4f187e10ea69cc77828e720a02.mp3str"
+
+[deps]
+
+source_file="res://Audios/trilha sonora/[FASE] Kevin MacLeod - Pixelland  NO COPYRIGHT 8-bit Music.mp3"
+dest_files=["res://.godot/imported/[FASE] Kevin MacLeod - Pixelland  NO COPYRIGHT 8-bit Music.mp3-c9932b4f187e10ea69cc77828e720a02.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
