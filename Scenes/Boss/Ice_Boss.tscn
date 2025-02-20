@@ -1,0 +1,290 @@
+[gd_scene load_steps=60 format=3 uid="uid://bxis6id1hxm4p"]
+
+[ext_resource type="Texture2D" uid="uid://xec8667qkt73" path="res://Assets/Enemy/Frost_Guardian_FREE_v1.0/Frost_Guardian_FREE_v1.0/PNG files/1_atk/1_atk_1.png" id="1_8pfyr"]
+[ext_resource type="Script" path="res://Scenes/Boss/ice_boss.gd" id="1_nr8r2"]
+[ext_resource type="Texture2D" uid="uid://bnlkqbxvph0lc" path="res://Assets/Enemy/Frost_Guardian_FREE_v1.0/Frost_Guardian_FREE_v1.0/PNG files/1_atk/1_atk_2.png" id="2_rm0kd"]
+[ext_resource type="Texture2D" uid="uid://dxllint33iy3m" path="res://Assets/Enemy/Frost_Guardian_FREE_v1.0/Frost_Guardian_FREE_v1.0/PNG files/1_atk/1_atk_3.png" id="3_e3hk1"]
+[ext_resource type="Texture2D" uid="uid://cndowf375laep" path="res://Assets/Enemy/Frost_Guardian_FREE_v1.0/Frost_Guardian_FREE_v1.0/PNG files/1_atk/1_atk_4.png" id="4_6jxfn"]
+[ext_resource type="Texture2D" uid="uid://bq2ft0i6rdl7u" path="res://Assets/Enemy/Frost_Guardian_FREE_v1.0/Frost_Guardian_FREE_v1.0/PNG files/1_atk/1_atk_5.png" id="5_v3b0j"]
+[ext_resource type="Texture2D" uid="uid://d1ay7k3pnajoi" path="res://Assets/Enemy/Frost_Guardian_FREE_v1.0/Frost_Guardian_FREE_v1.0/PNG files/1_atk/1_atk_6.png" id="6_2rceg"]
+[ext_resource type="Texture2D" uid="uid://b4i137ufjfx84" path="res://Assets/Enemy/Frost_Guardian_FREE_v1.0/Frost_Guardian_FREE_v1.0/PNG files/1_atk/1_atk_7.png" id="7_tevhl"]
+[ext_resource type="Texture2D" uid="uid://88csowegfyrn" path="res://Assets/Enemy/Frost_Guardian_FREE_v1.0/Frost_Guardian_FREE_v1.0/PNG files/1_atk/1_atk_8.png" id="8_drrcf"]
+[ext_resource type="Texture2D" uid="uid://dva20yymrbdmt" path="res://Assets/Enemy/Frost_Guardian_FREE_v1.0/Frost_Guardian_FREE_v1.0/PNG files/1_atk/1_atk_9.png" id="9_ehi1p"]
+[ext_resource type="Texture2D" uid="uid://dsvm350joyo6r" path="res://Assets/Enemy/Frost_Guardian_FREE_v1.0/Frost_Guardian_FREE_v1.0/PNG files/1_atk/1_atk_10.png" id="10_80sfu"]
+[ext_resource type="Texture2D" uid="uid://dw70ojoakiexr" path="res://Assets/Enemy/Frost_Guardian_FREE_v1.0/Frost_Guardian_FREE_v1.0/PNG files/1_atk/1_atk_11.png" id="11_85jc0"]
+[ext_resource type="Texture2D" uid="uid://ciro6mcnyc150" path="res://Assets/Enemy/Frost_Guardian_FREE_v1.0/Frost_Guardian_FREE_v1.0/PNG files/1_atk/1_atk_12.png" id="12_s5apr"]
+[ext_resource type="Texture2D" uid="uid://brcfcdmv6ptsy" path="res://Assets/Enemy/Frost_Guardian_FREE_v1.0/Frost_Guardian_FREE_v1.0/PNG files/1_atk/1_atk_13.png" id="13_vodnl"]
+[ext_resource type="Texture2D" uid="uid://6w57ncm2tpg2" path="res://Assets/Enemy/Frost_Guardian_FREE_v1.0/Frost_Guardian_FREE_v1.0/PNG files/1_atk/1_atk_14.png" id="14_eevyk"]
+[ext_resource type="Texture2D" uid="uid://bpsrv5gq80ess" path="res://Assets/Enemy/Frost_Guardian_FREE_v1.0/Frost_Guardian_FREE_v1.0/PNG files/death/death_1.png" id="15_fxeb1"]
+[ext_resource type="Texture2D" uid="uid://bb27st7is068j" path="res://Assets/Enemy/Frost_Guardian_FREE_v1.0/Frost_Guardian_FREE_v1.0/PNG files/death/death_2.png" id="16_ujgkh"]
+[ext_resource type="Texture2D" uid="uid://oxg43s7mqcdc" path="res://Assets/Enemy/Frost_Guardian_FREE_v1.0/Frost_Guardian_FREE_v1.0/PNG files/death/death_3.png" id="17_c7m46"]
+[ext_resource type="Texture2D" uid="uid://lgr3drvmj5ad" path="res://Assets/Enemy/Frost_Guardian_FREE_v1.0/Frost_Guardian_FREE_v1.0/PNG files/death/death_4.png" id="18_5t2j6"]
+[ext_resource type="Texture2D" uid="uid://b5n3t784xvkjb" path="res://Assets/Enemy/Frost_Guardian_FREE_v1.0/Frost_Guardian_FREE_v1.0/PNG files/death/death_5.png" id="19_gucc7"]
+[ext_resource type="Texture2D" uid="uid://bv26sb165kj1v" path="res://Assets/Enemy/Frost_Guardian_FREE_v1.0/Frost_Guardian_FREE_v1.0/PNG files/death/death_6.png" id="20_f1rvg"]
+[ext_resource type="Texture2D" uid="uid://evskodq4xf5i" path="res://Assets/Enemy/Frost_Guardian_FREE_v1.0/Frost_Guardian_FREE_v1.0/PNG files/death/death_7.png" id="21_x1d2v"]
+[ext_resource type="Texture2D" uid="uid://dm4nh7eyt41c6" path="res://Assets/Enemy/Frost_Guardian_FREE_v1.0/Frost_Guardian_FREE_v1.0/PNG files/death/death_8.png" id="22_v1yqr"]
+[ext_resource type="Texture2D" uid="uid://csp8s6e6r5avr" path="res://Assets/Enemy/Frost_Guardian_FREE_v1.0/Frost_Guardian_FREE_v1.0/PNG files/death/death_9.png" id="23_8h33r"]
+[ext_resource type="Texture2D" uid="uid://b21o41at5kamb" path="res://Assets/Enemy/Frost_Guardian_FREE_v1.0/Frost_Guardian_FREE_v1.0/PNG files/death/death_10.png" id="24_odpor"]
+[ext_resource type="Texture2D" uid="uid://dc3djvejma4da" path="res://Assets/Enemy/Frost_Guardian_FREE_v1.0/Frost_Guardian_FREE_v1.0/PNG files/death/death_11.png" id="25_yrjlp"]
+[ext_resource type="Texture2D" uid="uid://d1muehqvlhx2h" path="res://Assets/Enemy/Frost_Guardian_FREE_v1.0/Frost_Guardian_FREE_v1.0/PNG files/death/death_12.png" id="26_ihdkt"]
+[ext_resource type="Texture2D" uid="uid://cjon6v1bxbv07" path="res://Assets/Enemy/Frost_Guardian_FREE_v1.0/Frost_Guardian_FREE_v1.0/PNG files/death/death_13.png" id="27_1t0il"]
+[ext_resource type="Texture2D" uid="uid://ufwcrnpskjmd" path="res://Assets/Enemy/Frost_Guardian_FREE_v1.0/Frost_Guardian_FREE_v1.0/PNG files/death/death_14.png" id="28_brixf"]
+[ext_resource type="Texture2D" uid="uid://c8ustclvdpkc2" path="res://Assets/Enemy/Frost_Guardian_FREE_v1.0/Frost_Guardian_FREE_v1.0/PNG files/death/death_15.png" id="29_jua1m"]
+[ext_resource type="Texture2D" uid="uid://cc7uv8jyjiy4q" path="res://Assets/Enemy/Frost_Guardian_FREE_v1.0/Frost_Guardian_FREE_v1.0/PNG files/death/death_16.png" id="30_5wlt7"]
+[ext_resource type="Texture2D" uid="uid://e01pqt2lvmut" path="res://Assets/Enemy/Frost_Guardian_FREE_v1.0/Frost_Guardian_FREE_v1.0/PNG files/idle/idle_1.png" id="31_bsmli"]
+[ext_resource type="Texture2D" uid="uid://csjnhh80c8nnh" path="res://Assets/Enemy/Frost_Guardian_FREE_v1.0/Frost_Guardian_FREE_v1.0/PNG files/idle/idle_2.png" id="32_ykj5v"]
+[ext_resource type="Texture2D" uid="uid://wgluejn13d77" path="res://Assets/Enemy/Frost_Guardian_FREE_v1.0/Frost_Guardian_FREE_v1.0/PNG files/idle/idle_3.png" id="33_57dje"]
+[ext_resource type="Texture2D" uid="uid://dhb87osuhfiaj" path="res://Assets/Enemy/Frost_Guardian_FREE_v1.0/Frost_Guardian_FREE_v1.0/PNG files/idle/idle_4.png" id="34_7kta0"]
+[ext_resource type="Texture2D" uid="uid://bhqruyu2yp1te" path="res://Assets/Enemy/Frost_Guardian_FREE_v1.0/Frost_Guardian_FREE_v1.0/PNG files/idle/idle_5.png" id="35_0v6k6"]
+[ext_resource type="Texture2D" uid="uid://glkveklxqmbh" path="res://Assets/Enemy/Frost_Guardian_FREE_v1.0/Frost_Guardian_FREE_v1.0/PNG files/idle/idle_6.png" id="36_5voa0"]
+[ext_resource type="Texture2D" uid="uid://4vrqe11l6nle" path="res://Assets/Enemy/Frost_Guardian_FREE_v1.0/Frost_Guardian_FREE_v1.0/PNG files/walk/walk_1.png" id="37_a2cur"]
+[ext_resource type="Texture2D" uid="uid://c0bej4tcdedfx" path="res://Assets/Enemy/Frost_Guardian_FREE_v1.0/Frost_Guardian_FREE_v1.0/PNG files/walk/walk_2.png" id="38_wjdpj"]
+[ext_resource type="Texture2D" uid="uid://btqwppbsde1d4" path="res://Assets/Enemy/Frost_Guardian_FREE_v1.0/Frost_Guardian_FREE_v1.0/PNG files/walk/walk_3.png" id="39_ax0el"]
+[ext_resource type="Texture2D" uid="uid://doqeqmpix0kqw" path="res://Assets/Enemy/Frost_Guardian_FREE_v1.0/Frost_Guardian_FREE_v1.0/PNG files/walk/walk_4.png" id="40_v1v3r"]
+[ext_resource type="Texture2D" uid="uid://cc6agtc4ipbqs" path="res://Assets/Enemy/Frost_Guardian_FREE_v1.0/Frost_Guardian_FREE_v1.0/PNG files/walk/walk_5.png" id="41_purcr"]
+[ext_resource type="Texture2D" uid="uid://ddjgldr6gkuqf" path="res://Assets/Enemy/Frost_Guardian_FREE_v1.0/Frost_Guardian_FREE_v1.0/PNG files/walk/walk_6.png" id="42_k8bkd"]
+[ext_resource type="Texture2D" uid="uid://cju333if15vud" path="res://Assets/Enemy/Frost_Guardian_FREE_v1.0/Frost_Guardian_FREE_v1.0/PNG files/walk/walk_7.png" id="43_jmac4"]
+[ext_resource type="Texture2D" uid="uid://csnj0cuxn3wnp" path="res://Assets/Enemy/Frost_Guardian_FREE_v1.0/Frost_Guardian_FREE_v1.0/PNG files/walk/walk_8.png" id="44_q8nyn"]
+[ext_resource type="Texture2D" uid="uid://behm5p72vtbim" path="res://Assets/Enemy/Frost_Guardian_FREE_v1.0/Frost_Guardian_FREE_v1.0/PNG files/walk/walk_9.png" id="45_hdbp8"]
+[ext_resource type="Texture2D" uid="uid://de0kuekad6gjm" path="res://Assets/Enemy/Frost_Guardian_FREE_v1.0/Frost_Guardian_FREE_v1.0/PNG files/walk/walk_10.png" id="46_tolq5"]
+[ext_resource type="Texture2D" uid="uid://de5hwtx1d6tc5" path="res://Assets/Enemy/Frost_Guardian_FREE_v1.0/Frost_Guardian_FREE_v1.0/PNG files/take_hit/take_hit_1.png" id="47_gdjgq"]
+[ext_resource type="Texture2D" uid="uid://dgjmyy88212yw" path="res://Assets/Enemy/Frost_Guardian_FREE_v1.0/Frost_Guardian_FREE_v1.0/PNG files/take_hit/take_hit_2.png" id="48_ryysr"]
+[ext_resource type="Texture2D" uid="uid://cgd3rod1tsv52" path="res://Assets/Enemy/Frost_Guardian_FREE_v1.0/Frost_Guardian_FREE_v1.0/PNG files/take_hit/take_hit_3.png" id="49_tuukf"]
+[ext_resource type="Texture2D" uid="uid://oeplc5of7bra" path="res://Assets/Enemy/Frost_Guardian_FREE_v1.0/Frost_Guardian_FREE_v1.0/PNG files/take_hit/take_hit_4.png" id="50_i14ar"]
+[ext_resource type="Texture2D" uid="uid://2mig14yyxegm" path="res://Assets/Enemy/Frost_Guardian_FREE_v1.0/Frost_Guardian_FREE_v1.0/PNG files/take_hit/take_hit_5.png" id="51_x0f7m"]
+[ext_resource type="Texture2D" uid="uid://7pkeliqei33e" path="res://Assets/Enemy/Frost_Guardian_FREE_v1.0/Frost_Guardian_FREE_v1.0/PNG files/take_hit/take_hit_6.png" id="52_a3iit"]
+[ext_resource type="Texture2D" uid="uid://ghio32my2v2t" path="res://Assets/Enemy/Frost_Guardian_FREE_v1.0/Frost_Guardian_FREE_v1.0/PNG files/take_hit/take_hit_7.png" id="53_tqeis"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0dutt"]
+atlas = ExtResource("31_bsmli")
+region = Rect2(0, 0, 192, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lbiwe"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_8pfyr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_rm0kd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_e3hk1")
+}, {
+"duration": 2.0,
+"texture": ExtResource("4_6jxfn")
+}, {
+"duration": 2.0,
+"texture": ExtResource("5_v3b0j")
+}, {
+"duration": 3.0,
+"texture": ExtResource("6_2rceg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_tevhl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_drrcf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_ehi1p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_80sfu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_85jc0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_s5apr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_vodnl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_eevyk")
+}],
+"loop": true,
+"name": &"attack",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_fxeb1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_ujgkh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_c7m46")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_5t2j6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_gucc7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_f1rvg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_x1d2v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_v1yqr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_8h33r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_odpor")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_yrjlp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_ihdkt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_1t0il")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_brixf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_jua1m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_5wlt7")
+}],
+"loop": true,
+"name": &"death",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0dutt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_ykj5v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_57dje")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_7kta0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_0v6k6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_5voa0")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("37_a2cur")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_wjdpj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_ax0el")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_v1v3r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_purcr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_k8bkd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_jmac4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_q8nyn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_hdbp8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_tolq5")
+}],
+"loop": true,
+"name": &"run",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("47_gdjgq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_ryysr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_tuukf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_i14ar")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_x0f7m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_a3iit")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_tqeis")
+}],
+"loop": true,
+"name": &"take_hit",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bk2a0"]
+radius = 34.5
+height = 69.0
+
+[sub_resource type="Animation" id="Animation_ex6xs"]
+resource_name = "idle"
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_k8bst"]
+_data = {
+"idle": SubResource("Animation_ex6xs")
+}
+
+[node name="Boss" type="CharacterBody2D" node_paths=PackedStringArray("player")]
+scale = Vector2(2, 2)
+script = ExtResource("1_nr8r2")
+player = NodePath(".")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0.5, 0)
+sprite_frames = SubResource("SpriteFrames_lbiwe")
+animation = &"attack"
+autoplay = "idle"
+frame_progress = 0.944053
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 11)
+shape = SubResource("CapsuleShape2D_bk2a0")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_k8bst")
+}
+
+[node name="VerPlayer" type="RayCast2D" parent="."]
+position = Vector2(0.5, 25)
+scale = Vector2(1, 30)
+target_position = Vector2(-159, 0.0166667)
+collision_mask = 4
+
+[node name="AtacarPlayer" type="RayCast2D" parent="."]
+position = Vector2(0.5, 25)
+target_position = Vector2(-79.5, 1.5)

@@ -5,7 +5,7 @@ extends CharacterBody2D
 var speed = 150.0
 const JUMP_VELOCITY = -500.0
 const dash_speed = 900.0
-
+var game_over = preload("res://Scenes/canvas_layer.tscn")
 #@onready var lifes = $"/root/global".lifes as int
 
 @export var phase : PackedScene 
@@ -25,6 +25,7 @@ var death = false
 #-----------------------------------
 func _ready() -> void:
 	_init_state_machine()
+	hsm.dispatch(&"move_ended")
 
 #funcoes para a state machine
 func _idle_ready():
@@ -101,15 +102,15 @@ func _dash_physics_process(delta: float):
 		hsm.dispatch(&"fall_started")
 
 func _death_physics_process(delta: float):
-	print(hsm.get_active_state())
-	if anim.frame >= 7 :
-		queue_free()
-		get_tree().change_scene_to_packed(phase)
+	$"/root/global".lifes -= 3
+	
+	
 #func process
 func _physics_process(delta: float) -> void:
 	
 	var lifes = $"/root/global".lifes
-	
+	if lifes <= 0 :
+		get_tree().change_scene_to_packed($"/root/global".game_over)
 	if death :
 		print("death")
 		hsm.dispatch(&"death_started")
@@ -157,7 +158,7 @@ func _physics_process(delta: float) -> void:
 		is_dashing = true
 		hsm.dispatch(&"dash_started")
 	
-	if lifes <= 0 :
+	if lifes <= 0 or death == true:
 		hsm.dispatch(&"death_started")
 
 func _init_state_machine():
@@ -205,3 +206,21 @@ func _collision_sword():
 	$sword_area.monitorable = false
 	$sword_area.monitoring = false
 	$sword_area.visible = false
+
+
+func _on_animation_animation_finished() -> void:
+	if anim.animation == "death" :
+		$"/root/TransitionScreen".transition()
+		await $"/root/TransitionScreen".on_transition_finished
+		death = false
+		if $"/root/global".lifes >= 1 :
+			get_tree().change_scene_to_packed($"/root/global".r_phase)
+		else :
+			get_tree().change_scene_to_packed(game_over)
+		
+		
+
+
+func _on_sword_area_body_entered(body: Node2D) -> void:
+	if body.is_in_group("enemys") :
+		body.life -= 1

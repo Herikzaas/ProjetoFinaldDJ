@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://dp0jm5ridhdjx"]
+
+[ext_resource type="Texture2D" uid="uid://da6o8j166xq4j" path="res://Assets/Game-Over-Transparent-PNG.png" id="1_ix3k0"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(319.5, 240.5)
+scale = Vector2(0.8875, 0.762282)
+texture = ExtResource("1_ix3k0")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(320, 239)
