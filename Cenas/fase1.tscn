@@ -787,6 +787,7 @@ position_smoothing_enabled = true
 [node name="FallZone" parent="." instance=ExtResource("6_uga8w")]
 position = Vector2(381, 446)
 
+<<<<<<< HEAD
 [node name="FallZone2" parent="." instance=ExtResource("6_uga8w")]
 position = Vector2(857, 448)
 
@@ -801,3 +802,10 @@ position = Vector2(2087, 433)
 
 [node name="FallZone6" parent="." instance=ExtResource("6_uga8w")]
 position = Vector2(2243, 435)
+=======
+[node name="Itens_Coletaveis" type="Node2D" parent="."]
+
+[node name="Maça" type="Area2D" parent="Itens_Coletaveis"]
+
+[node name="Banana" type="Area2D" parent="Itens_Coletaveis"]
+>>>>>>> 8dca3592b27aa9c7fcd8f563bb94a7ea5c53507a

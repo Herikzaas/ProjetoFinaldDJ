@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://o3hhef2837mp"
+path="res://.godot/imported/[FASE] Quincas Moreira - Robot City  NO COPYRIGHT 8-bit Music.mp3-7f61e7b0212125d562500efe6a23a4c1.mp3str"
+
+[deps]
+
+source_file="res://Audios/trilha sonora/[FASE] Quincas Moreira - Robot City  NO COPYRIGHT 8-bit Music.mp3"
+dest_files=["res://.godot/imported/[FASE] Quincas Moreira - Robot City  NO COPYRIGHT 8-bit Music.mp3-7f61e7b0212125d562500efe6a23a4c1.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

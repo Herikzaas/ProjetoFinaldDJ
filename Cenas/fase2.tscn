@@ -111,11 +111,19 @@ texture = ExtResource("2_u13n3")
 15:1/0 = 0
 15:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 17:1/0 = 0
+<<<<<<< HEAD
 17:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -2.91682, -8, -2.74004)
 18:1/0 = 0
 18:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -2.56326, -8, -2.74004)
 19:1/0 = 0
 19:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -2.91682, -8, -3.09359)
+=======
+17:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+18:1/0 = 0
+18:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+19:1/0 = 0
+19:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+>>>>>>> 8dca3592b27aa9c7fcd8f563bb94a7ea5c53507a
 0:2/0 = 0
 0:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:2/0 = 0
@@ -462,6 +470,7 @@ tile_map_data = PackedByteArray("AAAAABsAAAAGAAUAAAAAABwAAAAGAAUAAAAAAB0AAAAGAAU
 tile_set = SubResource("TileSet_pa25l")
 
 [node name="Player" parent="." instance=ExtResource("4_boeno")]
+<<<<<<< HEAD
 position = Vector2(59, 102)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
@@ -498,3 +507,12 @@ position = Vector2(533, 195)
 
 [node name="CharacterBody2D2" parent="." instance=ExtResource("9_p7xw6")]
 position = Vector2(2190, 287)
+=======
+position = Vector2(49, 81)
+
+[node name="Itens_Coletaveis" type="Node2D" parent="."]
+
+[node name="Maça" type="Area2D" parent="Itens_Coletaveis"]
+
+[node name="Banana" type="Area2D" parent="Itens_Coletaveis"]
+>>>>>>> 8dca3592b27aa9c7fcd8f563bb94a7ea5c53507a

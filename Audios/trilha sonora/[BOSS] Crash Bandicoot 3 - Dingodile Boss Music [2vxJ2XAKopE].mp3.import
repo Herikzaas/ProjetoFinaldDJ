@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://w2fmvao8d72v"
+path="res://.godot/imported/[BOSS] Crash Bandicoot 3 - Dingodile Boss Music [2vxJ2XAKopE].mp3-bcbf5c0548c785c5651dcf8702a71dd7.mp3str"
+
+[deps]
+
+source_file="res://Audios/trilha sonora/[BOSS] Crash Bandicoot 3 - Dingodile Boss Music [2vxJ2XAKopE].mp3"
+dest_files=["res://.godot/imported/[BOSS] Crash Bandicoot 3 - Dingodile Boss Music [2vxJ2XAKopE].mp3-bcbf5c0548c785c5651dcf8702a71dd7.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
