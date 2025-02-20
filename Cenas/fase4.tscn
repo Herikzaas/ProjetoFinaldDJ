@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=4 uid="uid://dtl55jdsfrto0"]
+[gd_scene load_steps=24 format=4 uid="uid://dtl55jdsfrto0"]
 
 [ext_resource type="Texture2D" uid="uid://bxxnib416cgqa" path="res://Assets/1 - Foreground_scenery.png" id="1_xm2vb"]
 [ext_resource type="Texture2D" uid="uid://c6pvs0mbq04at" path="res://Assets/2 - Hills.png" id="2_p5dky"]
@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://bxis6id1hxm4p" path="res://Scenes/Boss/Ice_Boss.tscn" id="8_ed3k0"]
 [ext_resource type="AudioStream" uid="uid://hnibotosp3hm" path="res://Audios/trilha sonora/[FASE] The Whole Other - 8-Bit Dreamscape  NO COPYRIGHT 8-bit Music.mp3" id="9_foppx"]
 [ext_resource type="PackedScene" uid="uid://c2sstxewjfhte" path="res://Scenes/heart_regen.tscn" id="10_13xyy"]
+[ext_resource type="PackedScene" uid="uid://b8gvc1yuj8yhd" path="res://Scenes/Enemys/mage.tscn" id="11_wet58"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pvofi"]
 texture = ExtResource("1_xm2vb")
@@ -1113,7 +1114,8 @@ tile_map_data = PackedByteArray("AAAAACYABAAAAAkAAAAAACcABAAAAAkAAAABACYABAABAAk
 tile_set = SubResource("TileSet_y1ax1")
 
 [node name="Player" parent="." instance=ExtResource("6_6pofc")]
-position = Vector2(2824, 479)
+position = Vector2(101, 555)
+metadata/_edit_group_ = true
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 limit_left = 0
@@ -1154,3 +1156,6 @@ position = Vector2(66, 65)
 
 [node name="Area2D2" parent="." instance=ExtResource("10_13xyy")]
 position = Vector2(1048, 86)
+
+[node name="CharacterBody2D2" parent="." instance=ExtResource("11_wet58")]
+position = Vector2(435, 501)
