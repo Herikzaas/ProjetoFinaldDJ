@@ -340,3 +340,9 @@ tile_set = SubResource("TileSet_pa25l")
 
 [node name="Player" parent="." instance=ExtResource("4_boeno")]
 position = Vector2(49, 81)
+
+[node name="Itens_Coletaveis" type="Node2D" parent="."]
+
+[node name="Maça" type="Area2D" parent="Itens_Coletaveis"]
+
+[node name="Banana" type="Area2D" parent="Itens_Coletaveis"]
